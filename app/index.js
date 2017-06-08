@@ -1,39 +1,16 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+//
+// import('./index.css')
+
 var React = require('react');
 var ReactDOM = require('react-dom');
-require('./index.css')
-
-class Vege extends React.Component {
-  render() {
-    var veges = this.props.list.filter(function(item){
-      return item.vege == true;
-    });
-    var nonVeges = this.props.list.filter(function(item){
-      return item.vege !== true;
-    });
-
-    return (
-      <div>
-        <h1>Vegetables</h1>
-        <ul>
-         {veges.map(function(item){
-            return <li key={item.name}> {item.name} </li>;
-          })}
-        </ul>
-
-        <hr />
-
-        <h1> Non Vegetables </h1>
-        <ul>
-        {nonVeges.map(function(item){
-           return <li key={item.name}> {item.name} </li>;
-         })}
-        </ul>
-      </div>
-    )
-  }
-}
+require('./index.css');
+var App = require('./components/App');
 
 ReactDOM.render(
+  <App />,
+
   <Vege list={[
     { name: 'Bean', vege: true },
     { name: 'Broccoli', vege: true },
@@ -42,5 +19,6 @@ ReactDOM.render(
     { name: 'Cauliflower', vege: true },
     { name: 'Peach', vege: false } ]}
   />,
-  document.getElementById('app')
+document.getElementById('vege');
+document.getElementById('app');
 );

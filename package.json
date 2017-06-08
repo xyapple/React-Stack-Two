@@ -6,15 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --open"
   },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ]
-  },
   "author": "Yin Deascentis",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1"
