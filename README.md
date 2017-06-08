@@ -16,3 +16,8 @@ Key: 3 things in React Components:
 8) package.json: webpack-dev-server --open
 
 ### Understanding the .map and .filter
+
+# Adding react-router v4
+```
+npm install --save react-router-dom
+```

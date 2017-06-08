@@ -7,13 +7,17 @@
     "start": "webpack-dev-server --open"
   },
   "babel": {
-      "presets": ["env", "react"]
-    },
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
   "author": "Yin Deascentis",
   "license": "MIT",
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
