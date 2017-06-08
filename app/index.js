@@ -10,15 +10,5 @@ var App = require('./components/App');
 
 ReactDOM.render(
   <App />,
-
-  <Vege list={[
-    { name: 'Bean', vege: true },
-    { name: 'Broccoli', vege: true },
-    { name: 'Apple', vege: false },
-    { name: 'Banana', vege: false },
-    { name: 'Cauliflower', vege: true },
-    { name: 'Peach', vege: false } ]}
-  />,
-document.getElementById('vege');
-document.getElementById('app');
+document.getElementById('app')
 );

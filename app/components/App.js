@@ -12,7 +12,9 @@ var Route = ReactRouter.Route;
 var Switch = ReactRouter.Switch;
 var Nav = require('./Nav');
 var Home = require('./Home');
-var Vege =
+var BugTrack = require('./BugTracking');
+var ProjectManage = require('./ProjectManagement');
+var Chat = require('./Chat');
 
 class App extends React.Component {
   render() {
@@ -22,6 +24,9 @@ class App extends React.Component {
           <Nav/>
           <Switch>
            <Route exact path='/' component={Home} />
+           <Route exact path='/bugtrack' component={BugTrack} />
+           <Route exact path='/chat' component={Chat} />
+           <Route path='/projectmanage' component={ProjectManage} />
            <Route render={function () {
               return <p>Not Found</p>
             }} />

@@ -8,13 +8,13 @@ function Nav () {
         <NavLink exact activeClassName='active' to='/'>Home</NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='/battle'>Chat</NavLink>
+        <NavLink activeClassName='active' to='/chat'>Chat</NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='/battle'>Bug Tracking</NavLink>
+        <NavLink activeClassName='active' to='/bugtrack'>Bug Tracking</NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='/popular'>Project Management</NavLink>
+        <NavLink activeClassName='active' to='/projectmanage'>Project Management</NavLink>
       </li>
     </ul>
   )
